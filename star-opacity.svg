@@ -1,0 +1,21 @@
+<svg version="1.1"
+baseProfile="full"
+width="500" height="500"
+viewBox="0 0 300 300"
+xmlns="http://www.w3.org/2000/svg" >
+ <style>
+   @keyframes paint {from {r: 0} to {r: 60px}}
+
+
+  #myClip circle
+  {
+  animation: paint 7s infinite;
+  }
+ </style>
+   <clipPath id="myClip">
+    <circle cx="65" cy="60" r="20" />
+  </clipPath>
+<polygon points="65,20 80,50 110,50 80,65 95,95 65,80 35,95 50,65 20,50 50,50"
+  fill="orange" stroke="grey" stroke-width="1" fill-opacity=".5" id="paint-color"/>
+  <use  clip-path="url(#myClip)" href="#paint-color"  fill="orange" />
+</svg>
