@@ -1,0 +1,25 @@
+<svg
+width="300" height="300"
+viewBox="0 0 200 200"
+xmlns="http://www.w3.org/2000/svg" >
+<style>
+  @keyframes paint {from {r: 0} to {r: 60px}}
+
+ #painting:hover circle {
+ fill: orange;
+ animation: paint 7s infinite;
+}
+</style>
+ <a id="painting">
+   <mask id="mask">
+    <circle cx="65" cy="60" r="20" />
+   </mask>
+<polygon points="65,20 80,50 110,50 80,65 95,95 65,80 35,95 50,65 20,50 50,50"
+  fill="orange" stroke="grey" stroke-width="1" fill-opacity=".3" id="paint-color"/>
+  <g mask="url(#mask)">
+           <polygon points="65,20 80,50 110,50 80,65 95,95 65,80 35,95 50,65 20,50 50,50"
+   fill="orange" stroke="grey" stroke-width="1" id="paint-color"/>
+  </g>
+
+</a>
+</svg>
